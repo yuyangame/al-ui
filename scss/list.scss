@@ -1,0 +1,18 @@
+.list {
+ @extend  .border-bottom;
+padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #fff;
+}
+
+.list-header {
+  padding: $space-xsmall $space-medium;
+  background-color: $color-light;
+}
+
+.list-item {
+ @extend  .border-top;@extend 
+.padding;
+font-size: $font-size-medium;
+}

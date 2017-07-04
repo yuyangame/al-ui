@@ -1,0 +1,22 @@
+.msg {
+  text-align: center;
+  margin-top: $space-large;
+  margin-bottom: $space-medium;
+}
+
+.msg-icon {
+ @extend  .margin-bottom-medium;
+}
+
+.msg-title {
+  font-size: $font-size-large;
+  color: $color-text;
+ @extend  .line-height-xlarge;
+}
+
+.msg-desc {
+  font-size: $font-size-small;
+  color: $color-gray;
+ @extend  .line-height-large;@extend 
+.padding-h-large;
+}

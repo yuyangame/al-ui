@@ -11,6 +11,7 @@ const fs = require('fs');
 const swig = require('swig');
 const cssbeautify = require('cssbeautify');
 const vars = require('./vars');
+const process = require('child_process');
 
 const rootPath = path.dirname(__dirname) + '/';
 const templatesPath = rootPath + 'templates/';
@@ -22,7 +23,15 @@ files.forEach((file) => {
   if (!/\.swig$/.test(file)) return;
   let content = fs.readFileSync(templatesPath + file, 'utf8');
   let less = swig.render(content, { locals: vars });
-  fs.writeFileSync(rootPath + file.replace('.swig', '.less'), cssbeautify(less, {
+  let fn = rootPath + 'less/' + file.replace('.swig', '.less');
+  fs.writeFileSync(fn, cssbeautify(less, {
+    indent: '  ',
+    autosemicolon: true
+  }));
+  process.exec('less2sass ' + fn + ' -o ' + fn.replace(/less/gi, 'scss'), function (a,b,c) {
+  
+  });
+  fs.writeFileSync(fn.replace(/less/gi, 'scss'), cssbeautify(fs.readFileSync(fn.replace(/less/gi, 'scss'), 'utf8'), {
     indent: '  ',
     autosemicolon: true
   }));

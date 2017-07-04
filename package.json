@@ -1,25 +1,25 @@
 {
-  "name": "al-ui",
+  "name": "al-ui-scss",
   "version": "0.1.1",
   "description": "UI for labrador component",
-  "main": "index.less",
+  "main": "scss/index.scss",
   "scripts": {
     "build": "node scripts/build.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maichong/al-ui.git"
+    "url": "git+https://github.com/yuyangame/al-ui.git"
   },
   "author": {
-    "email": "liang@maichong.it",
-    "name": "liang",
-    "url": "https://github.com/liangxingchen"
+    "email": "kangzhq@foxmail.com",
+    "name": "yuyangame",
+    "url": "https://github.com/yuyangame"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/maichong/al-ui/issues"
   },
-  "homepage": "https://github.com/maichong/al-ui#readme",
+  "homepage": "https://github.com/yuyangame/al-ui#readme",
   "devDependencies": {
     "cssbeautify": "^0.3.1",
     "swig": "^1.4.2"
