@@ -1,7 +1,7 @@
 .footer {
- @extend  .text-center;
+  @extend  .text-center;
 font-size: $font-size-small;
   color: $color-gray;
- @extend  .padding;
+  @extend  .padding;
 line-height: $line-height-large;
 }

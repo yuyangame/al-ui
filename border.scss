@@ -29,12 +29,12 @@
 }
 
 .border-v {
- @extend  .border-top;@extend 
+  @extend  .border-top;@extend 
 .border-bottom;
 }
 
 .border-h {
- @extend  .border-left;@extend 
+  @extend  .border-left;@extend 
 .border-right;
 }
 

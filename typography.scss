@@ -150,7 +150,7 @@ page {
 }
 
 .group-header {
- @extend  .padding;
+  @extend  .padding;
 color: $color-gray;
   font-size: $font-size-medium;
 }
@@ -158,7 +158,7 @@ color: $color-gray;
 .tips {
   color: $color-gray;
   font-size: $font-size-small;
- @extend  .padding-h-small;@extend 
+  @extend  .padding-h-small;@extend 
 .margin-v-xsmall;
 }
 

@@ -3,7 +3,7 @@
 }
 
 .btn {
- @extend  .inline-block;
+  @extend  .inline-block;
 color: $color-text;
   background: $color-light;
   padding: $space-small $space-large;

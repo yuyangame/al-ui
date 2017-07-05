@@ -5,18 +5,18 @@
 }
 
 .msg-icon {
- @extend  .margin-bottom-medium;
+  @extend  .margin-bottom-medium;
 }
 
 .msg-title {
   font-size: $font-size-large;
   color: $color-text;
- @extend  .line-height-xlarge;
+  @extend  .line-height-xlarge;
 }
 
 .msg-desc {
   font-size: $font-size-small;
   color: $color-gray;
- @extend  .line-height-large;@extend 
+  @extend  .line-height-large;@extend 
 .padding-h-large;
 }

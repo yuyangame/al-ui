@@ -1,6 +1,6 @@
 {
   "name": "al-ui-scss",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "UI for labrador component",
   "main": "scss/index.scss",
   "scripts": {

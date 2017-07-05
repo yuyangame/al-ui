@@ -28,11 +28,11 @@ files.forEach((file) => {
     indent: '  ',
     autosemicolon: true
   }));
-  process.exec('less2sass ' + fn + ' -o ' + fn.replace(/less/gi, 'scss'), function (a,b,c) {
-  
+  process.exec('less2sass ' + fn + ' -o ' + (rootPath + file.replace('.swig', '.scss')), function (a,b,c) {
+    
+    fs.writeFileSync(rootPath + file.replace('.swig', '.scss'), cssbeautify(fs.readFileSync(rootPath + file.replace('.swig', '.scss'), 'utf8'), {
+      indent: '  ',
+      autosemicolon: true
+    }));
   });
-  fs.writeFileSync(fn.replace(/less/gi, 'scss'), cssbeautify(fs.readFileSync(fn.replace(/less/gi, 'scss'), 'utf8'), {
-    indent: '  ',
-    autosemicolon: true
-  }));
 });
